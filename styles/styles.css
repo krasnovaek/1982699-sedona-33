@@ -1,0 +1,192 @@
+                                        @font-face {
+                                            font-family: "PT Sans";
+                                            font-style: normal;
+                                            font-weight: 400;
+                                            src: url(fonts/pt-sans-regular.woff2) format("woff2");
+                                            font-display: swap
+                                        }
+                                        
+                                        @font-face {
+                                            font-family: "PT Sans";
+                                            font-style: normal;
+                                            font-weight: 700;
+                                            src: url(fonts/pt-sans-bold.woff2) format("woff2");
+                                            font-display: swap
+                                        }
+                                        
+                                        @font-face {
+                                            font-family: "PT Sans";
+                                            font-style: italic;
+                                            font-weight: 400;
+                                            src: url(fonts/pt-sans-italic.woff2) format("woff2")
+                                        }
+                                        
+                                        @font-face {
+                                            font-family: "PT Sans";
+                                            font-style: italic;
+                                            font-weight: 700;
+                                            src: url(fonts/pt-sans-bold-italic.woff2) format("woff2");
+                                            font-display: swap
+                                        }
+                                        
+                                        body {
+                                            font-family: "PT Sans", sans-serif;
+                                            font-size: 20px;
+                                            line-height: 24px;
+                                            color: #242424;
+                                            background-color: #fbf7f4
+                                        }
+                                        
+                                        .page-header {
+                                            color: #000;
+                                            background: #fff;
+                                        }
+                                        
+                                        .navigation-link {
+                                            font-family: "PT Sans", sans-serif;
+                                            font-style: normal;
+                                            line-height: 26px;
+                                            font-size: 20px;
+                                            font-weight: bold;
+                                            color: #000000;
+                                            background-color: #fff;
+                                            text-decoration: none;
+                                        }
+                                        
+                                        .main-index {
+                                            color: #000000;
+                                            font-family: PT Sans;
+                                            background-color: #fff;
+                                            font-weight: bold;
+                                            background-image: url("images\indexbackground.jpg");
+                                            background-size: 100% auto;
+                                            background-repeat: no-repeat;
+                                            text-transform: uppercase;
+                                            text-align: center;
+                                        }
+                                        
+                                        .advantages-title {
+                                            text-align: center;
+                                        }
+                                        
+                                        .advantages-item {
+                                            font-family: "PT Sans", sans-serif;
+                                            font-size: 24px;
+                                            line-height: 28px;
+                                            text-transform: uppercase;
+                                        }
+                                        
+                                        .page-footer {
+                                            background-color: #ffffff;
+                                        }
+                                        
+                                        .footer-contacts-phone {
+                                            font-family: "PT Sans";
+                                            font-size: 40px;
+                                            line-height: 40px;
+                                            text-align: center;
+                                            color: #000000;
+                                            text-decoration: none;
+                                            text-transform: uppercase;
+                                        }
+                                        
+                                        .advantages-description {
+                                            font-family: "PT Sans";
+                                            font-size: 18px;
+                                            line-height: 21px;
+                                            text-align: center;
+                                            color: #000000;
+                                            text-decoration: none;
+                                        }
+                                        
+                                        .inner-header-title {
+                                            font-size: 60px;
+                                            line-height: 78px;
+                                            text-transform: uppercase;
+                                            color: #FFFFFF;
+                                            font-weight: bold;
+                                        }
+                                        
+                                        .inner-header {
+                                            color: #000000;
+                                            background-color: #fff;
+                                            background: url(images/catalogbackground.png);
+                                            width: 1200px;
+                                            height: 408px;
+                                            background-repeat: no-repeat;
+                                        }
+                                        
+                                        .button {
+                                            font-family: PT Sans;
+                                            font-size: 20px;
+                                            line-height: 26px;
+                                            font-weight: 700;
+                                            text-align: center;
+                                            color: #ffffff;
+                                            background: #83B3D3;
+                                            text-decoration: none;
+                                            text-transform: uppercase;
+                                        }
+                                        
+                                        .pagination {
+                                            background-color: #ffffff;
+                                        }
+                                        
+                                        .pagination-link {
+                                            color: #ffffff;
+                                            background: #83B3D3;
+                                            font-weight: bold;
+                                            font-size: 20px;
+                                            line-height: 26px;
+                                            text-align: center;
+                                            text-transform: uppercase;
+                                        }
+                                        
+                                        .pagination-current {
+                                            color: #000000;
+                                            background-color: #ffffff;
+                                        }
+                                        
+                                        .pagination-disabled {
+                                            background-color: #595959;
+                                        }
+                                        
+                                        .hotel-item {
+                                            color: #000000;
+                                            font-weight: bold;
+                                            font-size: 24px;
+                                            line-height: 31px;
+                                        }
+                                        
+                                        .hotel__rating-text {
+                                            background: #83B3D3;
+                                            background: url(images/icons/star.svg);
+                                        }
+                                        
+                                        .footer-contacts {
+                                            color: #fff;
+                                            font-weight: bold;
+                                            background-image: url("images\background.png)");
+                                            background-size: 100% auto;
+                                            background-repeat: no-repeat;
+                                            text-transform: uppercase;
+                                            text-align: center;
+                                        }
+                                        
+                                        .interest-block {
+                                            color: #000000;
+                                            background-color: #fff;
+                                            background-size: 100% auto;
+                                            background-repeat: no-repeat;
+                                        }
+                                        
+                                        .interest-block p {
+                                            text-transform: none;
+                                            text-align: center;
+                                            font-size: 22px;
+                                            line-height: 26px;
+                                        }
+                                        
+                                        .main-index p {
+                                            text-transform: none;
+                                        }
