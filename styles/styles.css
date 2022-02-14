@@ -141,7 +141,7 @@ body {
   text-align: center;
 }
 
-.feature-clearfix {
+.feature {
   display: flex;
   justify-content: space-between;
   color: #ffffff;
@@ -151,7 +151,7 @@ body {
   width: 1200px;
 }
 
-.feature-clearfix-description {
+.feature-description {
   text-align: center;
   padding: 47px 4% 24px;
   color: #ffffff;
@@ -161,7 +161,7 @@ body {
   margin-top: 22px;
 }
 
-.feature-clearfix2 {
+.feature2 {
   display: flex;
   justify-content: space-between;
   color: #ffffff;
