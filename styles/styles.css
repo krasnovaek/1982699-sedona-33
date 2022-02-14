@@ -31,6 +31,18 @@ body {
   background-color: #fbf7f4;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
 .page-header {
   color: #000000;
   background: #ffffff;
@@ -39,29 +51,39 @@ body {
 .navigation {
   display: flex;
   width: 1060px;
+  margin: 0 auto;
 }
 
 .navigation-list {
-  width: 345px;
+  display: flex;
   margin: 0;
-  padding: 0;
+  list-style-type: none;
+  flex-wrap: wrap;
 }
 
 .navigation-link {
+  display: block;
   line-height: 26px;
   font-size: 20px;
   font-weight: bold;
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
+  padding-left: 17px;
 }
 
 .navigation-user {
   max-width: 1060px;
-  padding-left: 796px;
+  margin: auto;
+}
+
+.navigation-item a.button {
+  background-color: #756257;
 }
 
 .logo {
+  display: block;
+  margin: 0 auto;
   color: #000000;
   background-color: #ffffff;
   background-image: url("../images/indexbackground.jpg");
@@ -80,10 +102,11 @@ body {
 }
 
 .advantages-item {
-  width: 400px;
-  font-size: 24px;
-  line-height: 28px;
+  text-align: center;
+  padding: 47px 4% 24px;
+  color: #000000;
   text-transform: uppercase;
+  list-style-type: none;
 }
 
 .advantages-description {
@@ -96,19 +119,26 @@ body {
 
 .advantages-list {
   display: flex;
-  justify-content: space-between;
   color: #000000;
+  justify-content: space-between;
+  width: 1200px;
+  height: 384px;
   margin: 0;
-  padding: 0;
+  list-style-type: none;
+  flex-direction: row;
+  text-align: center;
 }
 
 .features-list {
   display: flex;
   justify-content: space-between;
   color: #000000;
-  padding: 0;
-  flex-direction: row;
+  margin: 0;
+  width: 1200px;
   height: 384px;
+  list-style-type: none;
+  flex-direction: row;
+  text-align: center;
 }
 
 .feature-clearfix {
@@ -116,11 +146,19 @@ body {
   justify-content: space-between;
   color: #ffffff;
   margin: 0;
-  padding: 0;
-  flex-direction: row;
   background: #83b3d3;
   text-align: center;
   width: 1200px;
+}
+
+.feature-clearfix-description {
+  text-align: center;
+  padding: 47px 4% 24px;
+  color: #ffffff;
+}
+
+.feature-text {
+  margin-top: 22px;
 }
 
 .feature-clearfix2 {
@@ -135,6 +173,7 @@ body {
 }
 
 .advantages-title {
+  display: flex;
   font-family: "PT Sans", sans-serif;
   font-size: 24px;
   line-height: 28px;
@@ -148,7 +187,8 @@ body {
   width: 1200px;
   height: 411px;
   text-align: center;
-  justify-content: space-around;
+  color: #ffffff;
+  font-style: normal;
 }
 
 .page-footer a {
@@ -160,6 +200,13 @@ body {
 .footer-social-list {
   width: 107px;
   height: 18px;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.footer-contacts {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-contacts-phone {
@@ -188,6 +235,14 @@ body {
   background-repeat: no-repeat;
 }
 
+.catalog-choose {
+  display: flex;
+  margin: 0 auto;
+  padding: 0;
+  width: 1057px;
+  justify-content: space-between;
+}
+
 .button {
   font-size: 20px;
   line-height: 26px;
@@ -200,7 +255,15 @@ body {
 }
 
 .pagination {
+  display: flex;
   background-color: #ffffff;
+  list-style-type: none;
+  justify-content: space-between;
+}
+
+.paginaition-control {
+  display: flex;
+  justify-content: space-between;
 }
 
 .pagination-link {
@@ -222,11 +285,24 @@ body {
   background-color: #595959;
 }
 
+.filter-catalog {
+  display: flex;
+  flex-direction: row;
+}
+
+.hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .hotel-item {
   color: #000000;
   font-weight: bold;
   font-size: 24px;
   line-height: 31px;
+  flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .hotel__rating-star {
@@ -238,6 +314,8 @@ body {
 
 .interest-block {
   color: #000000;
+  text-transform: uppercase;
+  text-align: center;
   background-color: #ffffff;
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -260,3 +338,8 @@ body {
   text-transform: none;
 }
 
+.main-container {
+  flex-grow: 1;
+  padding-top: 64px;
+  padding-bottom: 60px;
+}

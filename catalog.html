@@ -43,70 +43,74 @@
     </header>
     <main class="main-inner">
       <header class="inner-header">
-        <h1 class="inner-header-title">Гостиницы Седоны</h1>
-        <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-title">Инфраструктура</legend>
-          <ul class="catalog-filter-list">
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="Infrastructure" value="Бассейн"
-                  checked>Бассейн</label>
-            </li>
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="Infrastructure" value="Парковка"
-                  checked>Парковка</label>
-            </li>
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="Infrastructure" value="Wi-Fi">Wi-Fi</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-title">Тип жилья</legend>
-          <ul class="catalog-filter-list">
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input class="control-input" type="radio" name="hotel-group" value="shaving-supplies"
-                  checked>Гостиница</label>
-            </li>
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input class="control-input" type="radio" name="hotel-group" value="care-products">Мотель</label>
-            </li>
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input class="control-input" type="radio" name="hotel-group" value="accessories">Апартаменты</label>
-            </li>
-          </ul>
-        </fieldset>
-        <p class="form-filters__legend">Стоимость, ₽:</p>
-        <p class="form-filters__interval">
-          <label class="form-filters__label">
-            <input class="form-filters__input-text" type="text" name="min-price" value="0">
-          </label>
-          <label class="form-filters__label">
-            <input class="form-filters__input-text" type="text" name="max-price" value="9000">
-          </label>
-        </p>
-        <button class="form-filters__button" type="submit">Применить</button>
-        <button class="button" type="reset">Сбросить</button>
-        <section class="catalog">
+        <div class="filter-catalog">
+          <h1 class="inner-header-title">Гостиницы Седоны</h1>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Инфраструктура</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="Infrastructure" value="Бассейн"
+                    checked>Бассейн</label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="Infrastructure" value="Парковка"
+                    checked>Парковка</label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="Infrastructure" value="Wi-Fi">Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Тип жилья</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="hotel-group" value="shaving-supplies"
+                    checked>Гостиница</label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="hotel-group" value="care-products">Мотель</label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="radio" name="hotel-group" value="accessories">Апартаменты</label>
+              </li>
+            </ul>
+            <p class="form-filters__legend">Стоимость, ₽:</p>
+            <p class="form-filters__interval">
+              <label class="form-filters__label">
+                <input class="form-filters__input-text" type="text" name="min-price" value="0">
+              </label>
+              <label class="form-filters__label">
+                <input class="form-filters__input-text" type="text" name="max-price" value="9000">
+              </label>
+            </p>
+            <button class="form-filters__button" type="submit">Применить</button>
+            <button class="button" type="reset">Сбросить</button>
+          </fieldset>
+        </div>
+      </header>
+      <section class="catalog">
+        <div class="catalog-choose">
           <h2 class="catalog__result">Найдено гостиниц: 38</h2>
           <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешёвое</option>
             <option value="popular">Сначала популярное</option>
             <option value="expensive">Сначала дорогое</option>
           </select>
-        </section>
-        <a class="button" href="images/icons/title.svg">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-        <a href="images/icons/list.svg" class="button button-light">
-          <span class="visually-hidden">Показать список</span>
-        </a>
-      </header>
+      </section>
+      <a class="button" href="images/icons/title.svg">
+        <span class="visually-hidden">Показать карточки</span>
+      </a>
+      <a href="images/icons/list.svg" class="button button-light">
+        <span class="visually-hidden">Показать список</span>
+      </a>
+      </div>
       <section class="hotel">
         <ul class="hotel-list">
           <li class="hotel-item">
@@ -156,44 +160,45 @@
           </li>
         </ul>
       </section>
-      <ul class="pagination">
-        <li class="pagination-item">
-          <a class="pagination-link pagination-current">1</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">2</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">3</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">4</a>
-        </li>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">...</a>
-        <li class="pagination-item">
-          <a class="pagination-link" href="#">10</a>
-        </li>
-        <li class="pagination-item">
-        </li>
-      </ul>
-      <p>Гостиниц на странице:</p>
-      <select class="select-control" aria-label="quantity">
-        <option value="quantity">4</option>
-        <option value="quantity">3</option>
-        <option value="quantity">2</option>
-      </select>
+      <div class="paginaition-control">
+        <ul class="pagination">
+          <li class="pagination-item">
+            <a class="pagination-link pagination-current">1</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">2</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">3</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">4</a>
+          </li>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">...</a>
+          <li class="pagination-item">
+            <a class="pagination-link" href="#">10</a>
+          </li>
+          <li class="pagination-item">
+          </li>
+        </ul>
+        <p>Гостиниц на странице:</p>
+        <select class="select-control" aria-label="quantity">
+          <option value="quantity">4</option>
+          <option value="quantity">3</option>
+          <option value="quantity">2</option>
+        </select>
+      </div>
     </main>
     <footer class="page-footer">
-      <section class="footer-contacts">
+      <section class="page-footer-contacts">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <label for="appointment-form-email">Ваш e-mail</label>
         <input type="email" id="appointment-form-email" name="appointment-form-email" placeholder="Ваш e-mail">
         <button class="button" type="submit">Подписаться</button>
       </section>
       <section class="footer-social">
-        <h2 class="page-footer-title">Давайте дружить</h2>
+        <h2 class="visually-hidden">Давайте дружить</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button" href="images/social-twitter.svg">
