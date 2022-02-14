@@ -77,10 +77,6 @@ body {
   margin: auto;
 }
 
-.navigation-button {
-  background-color: #756257;
-}
-
 .logo {
   display: block;
   margin: 0 auto;
@@ -254,6 +250,10 @@ body {
   text-transform: uppercase;
 }
 
+.navigation-button {
+  background-color: #756257;
+}
+
 .pagination {
   display: flex;
   background-color: #ffffff;
@@ -343,3 +343,4 @@ body {
   padding-top: 64px;
   padding-bottom: 60px;
 }
+
