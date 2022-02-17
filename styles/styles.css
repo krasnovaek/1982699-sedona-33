@@ -21,7 +21,6 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  min-height: 100%;
   width: 1200px;
   margin: 0 auto;
   font-family: "PT Sans", sans-serif;
@@ -108,30 +107,39 @@ body {
   text-align: center;
 }
 
-.intro {
+.description-text {
   color: #000000;
   background-color: #ffffff;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
+  width: 1200px;
+  padding: 50px 0;
 }
 
 .advantages-kind {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  list-style-type: none;
 }
 
 .advantages-town {
   display: grid;
-  grid-template-columns: 400px 800px;
+  background-color: #83b3d3;
+  grid-template-columns: 200px 200px 800px;
+  color: #ffffff;
   width: 1200px;
+  height: 384px;
 }
 
 
 .advantages-bridge {
   display: grid;
-  grid-template-columns: 400px 800px;
+  grid-template-columns: 200px 200px 800px;
+  background-color: #83b3d3;
+  color: #ffffff;
   width: 1200px;
+  height: 384px;
 }
 
 
@@ -148,7 +156,6 @@ body {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
-  color: #000000;
   text-decoration: none;
 }
 
