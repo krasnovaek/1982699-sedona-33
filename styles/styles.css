@@ -125,6 +125,10 @@ body {
   padding: 0;
 }
 
+.advantages-list-nested {
+  grid-column: 1 / -1;
+}
+
 .advantages-text {
   background-color: #83b3d3;
   color: #ffffff;
