@@ -152,6 +152,9 @@ body {
   text-decoration: none;
 }
 
+.advantages-illustration {
+  grid-column-end: span 2;
+}
 
 .advantages-title {
   font-family: "PT Sans", sans-serif;
