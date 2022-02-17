@@ -125,7 +125,13 @@ body {
   padding: 0;
 }
 
+.advantages-list-main {
+  counter-reset: advantages-counter;
+}
+
 .advantages-list-nested {
+  --counter-content: initial;
+
   grid-column: 1 / -1;
 }
 
@@ -140,6 +146,12 @@ body {
   text-transform: uppercase;
   list-style-type: none;
   text-align: center;
+}
+
+.advantages-list-main > .advantages-item {
+  --counter-content: "— №" counter(advantages-counter) " —";
+
+  counter-increment: advantages-counter;
 }
 
 .advantages-item-illustrated {
@@ -157,6 +169,11 @@ body {
   line-height: 21px;
   text-align: center;
   text-decoration: none;
+}
+
+.advantages-description::before {
+  content: var(--counter-content);
+  display: block;
 }
 
 .advantages-illustration {
