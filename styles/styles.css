@@ -191,12 +191,17 @@ body {
   text-transform: uppercase;
 }
 
-.advantages-title::before {
+.advantages-title-icon {
+  margin-bottom: calc(1em - 5px);
+}
+
+.advantages-title-icon::before {
   content: var(--advantage-icon, initial);
   display: block;
   width: 84px;
   height: 84px;
   margin: 0 auto;
+  transform: translateY(-20px);
 }
 
 .icon-house {
