@@ -148,6 +148,10 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.advantages-item-illustrated:nth-child(2n+2) {
+  --illustration-order: -1;
+}
+
 .advantages-description {
   font-size: 18px;
   line-height: 21px;
@@ -157,6 +161,7 @@ body {
 
 .advantages-illustration {
   grid-column-end: span 2;
+  order: var(--illustration-order, initial);
 }
 
 .advantages-title {
