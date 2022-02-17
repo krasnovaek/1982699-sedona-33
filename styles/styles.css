@@ -138,14 +138,14 @@ body {
 .advantages-text {
   background-color: #83b3d3;
   color: #ffffff;
+  padding: 76px 80px 71px;
 }
 
 
 .advantages-item {
   color: #000000;
-  text-transform: uppercase;
-  list-style-type: none;
   text-align: center;
+  padding: 76px 80px 71px;
 }
 
 .advantages-list-main > .advantages-item {
@@ -158,6 +158,7 @@ body {
   grid-column: 1 / -1;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 0;
 }
 
 .advantages-item-illustrated:nth-child(2n+2) {
@@ -174,6 +175,7 @@ body {
 .advantages-description::before {
   content: var(--counter-content);
   display: block;
+  margin: 30px auto;
 }
 
 .advantages-illustration {
