@@ -19,8 +19,7 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   width: 1200px;
   margin: 0 auto;
   font-family: "PT Sans", sans-serif;
@@ -125,8 +124,7 @@ body {
 }
 
 .navigation-link {
-  position: relative;
-  display: block;
+  display: flex;
   font-family: "PT Sans", sans-serif;
   line-height: 26px;
   font-size: 20px;
@@ -134,28 +132,51 @@ body {
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
-  padding-left: 17px;
 }
 
 .navigation-link:hover {
-  background-color: #595959;
+  color: #756257;
 }
 
-.navigation-link:focus {
-  box-shadow: inset 0 0 0 4px #e7e7e7;
-  outline: none;
+.navigation-link:active {
+  opacity: 0.3;
 }
 
-.navigation-user .navigation-item:nth-child(1) .navigation-link {
-  background-image: url("../images//icons//seach.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.navigation-link::before {
+  width: 20px;
+  height: 20px;
+  background-color: currentColor;
+  mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
 }
 
-.navigation-user .navigation-item:nth-child(2) .navigation-link {
-  background-image: url("../images//icons//heart.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.icon-search::before {
+  content: "";
+  mask-image: url("../images/icons/seach.svg");
+}
+
+.icon-favorites::before {
+  content: "";
+  mask-image: url("../images/icons/heart.svg");
+}
+
+.has-badge {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: -7px;
+  right: -13px;
+  line-height: 13px;
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: -0.1em;
+  padding: 3px 5px;
+  border-radius: 2em;
+  color: #ffffff;
+  background-color: #7db550;
 }
 
 .navigation-user {
@@ -163,33 +184,17 @@ body {
   margin: auto;
 }
 
-.navigation-icon {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  fill: #242424;
+.navigation-link[aria-current="page"] {
+  position: relative;
 }
 
-
-.navigation-link:hover .navigation-icon {
-  fill: #242424;
-}
-
-.navigation-link:focus .navigation-icon {
-  fill: #242424;
-}
-
-.navigation-link-current::before {
-  position: absolute;
-  right: 20px;
-  bottom: 0;
-  left: 20px;
-  height: 4px;
-  background-color: #ffffff;
+.navigation-link[aria-current="page"]::before {
   content: "";
+  position: absolute;
+  bottom: -21px;
+  width: 100%;
+  height: 2px;
+  background-color: #756257;
 }
 
 .main-index p {
@@ -215,7 +220,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   width: 1200px;
-  padding: 50px 0;
+  height: 282px;
 }
 
 .advantages-list {
@@ -365,8 +370,9 @@ body {
   align-self: flex-end;
 }
 
-.footer-contacts {
-  display: flex;
+.footer-social {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .aappointment-email {
@@ -387,21 +393,21 @@ body {
 
 .footer-social-link {
   display: block;
-  height: 44px;
   background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.footer-social-tw {
+
+.footer-social-tw::before {
   background-image: url("../images/icons/twitter.svg");
 }
 
-.footer-social-fa {
+.footer-social-fa::before {
   background-image: url("../images/icons/facebook.svg");
 }
 
-.footer-social-yo {
+.footer-social-yo::before {
   background-image: url("../images/icons/youtube.svg");
 }
 
@@ -573,4 +579,3 @@ body {
   border-radius: 4px;
   margin-left: 290px;
 }
-
