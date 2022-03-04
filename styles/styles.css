@@ -365,8 +365,6 @@ body {
 }
 
 .page-footer a {
-  width: 115px;
-  height: 34px;
   align-self: flex-end;
 }
 
@@ -392,22 +390,29 @@ body {
 }
 
 .footer-social-link {
-  display: block;
+  display: flex;
   background-color: #ffffff;
+}
+
+.footer-social-link::before {
+  width: 20px;
+  height: 20px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-
 .footer-social-tw::before {
+  content: "";
   background-image: url("../images/icons/twitter.svg");
 }
 
 .footer-social-fa::before {
+  content: "";
   background-image: url("../images/icons/facebook.svg");
 }
 
 .footer-social-yo::before {
+  content: "";
   background-image: url("../images/icons/youtube.svg");
 }
 
