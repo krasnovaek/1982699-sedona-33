@@ -53,6 +53,7 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .button + .button {
@@ -121,12 +122,20 @@ body {
   margin: 0;
   list-style-type: none;
   flex-wrap: wrap;
+  width: auto;
+  margin-bottom: 3px;
+  margin-top: 1px;
+  padding: 20px;
+  padding-left: 17px;
+  padding-right: 17px;
 }
 
 .navigation-link {
   display: flex;
   font-family: "PT Sans", sans-serif;
   line-height: 26px;
+  margin-left: 17px;
+  margin-right: 17px;
   font-size: 20px;
   font-weight: bold;
   color: #000000;
@@ -204,13 +213,25 @@ body {
 .logo {
   display: block;
   margin: 0 auto;
+  width: 1200px;
+  height: 485px;
   color: #000000;
   background-color: #ffffff;
   background-image: url("../images/indexbackground.jpg");
-  background-size: 1200px 485px;
   background-repeat: no-repeat;
   text-transform: uppercase;
   text-align: center;
+}
+
+.logo::after {
+  content: "";
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  width: 100%;
+  height: 57px;
+  background: url("../images/logovector.svg") no-repeat;
+  background-size: 100% 57px;
 }
 
 .description-text {
@@ -219,6 +240,7 @@ body {
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
+  line-height: 36px;
   width: 1200px;
   height: 282px;
 }
@@ -364,29 +386,40 @@ body {
   font-style: normal;
 }
 
-.page-footer a {
-  align-self: flex-end;
-}
-
 .footer-social {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.aappointment-email {
+.appointment-email {
   display: flex;
-  margin: 0;
   padding: 0;
+  margin: auto;
 }
 
 .appointment-form-buttom {
   height: 60px;
   width: 200px;
+  border-radius: 0 10px 10px 0;
 }
 
 .footer-social-list {
   display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  align-items: baseline;
+  max-width: 150px;
   list-style-type: none;
+  padding: 0;
+  margin-top: 49px;
+  margin-bottom: 53px;
+  margin-left: 72px;
+}
+
+.page-footer-contacts-catalog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .footer-social-link {
@@ -416,10 +449,26 @@ body {
   background-image: url("../images/icons/youtube.svg");
 }
 
+.footer-social-item {
+  margin-left: 30px;
+}
+
 .sort-lists {
   display: flex;
   list-style-type: none;
 }
+
+.contacts-phone {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  color: #000000;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+}
+
 
 .sort-link-social-tit {
   background-image: url("../images//icons/title.svg");
@@ -452,6 +501,11 @@ body {
   width: 115px;
   height: 34px;
   background-image: url("../images/icons/htmlacademy.svg");
+  margin-top: 42px;
+  margin-bottom: 44px;
+  margin-right: 72px;
+  margin-left: 53px;
+  text-decoration: none;
 }
 
 .footer-contacts-phone {
@@ -471,7 +525,6 @@ body {
   height: 408px;
   background-repeat: no-repeat;
 }
-
 
 .inner-header-title {
   font-size: 60px;
@@ -501,7 +554,22 @@ body {
 }
 
 .catalog-filter-button {
-  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  margin-right: 72px;
+  border-radius: 4px;
+}
+
+.catalog-filter-reset {
+  background-color: inherit;
+}
+
+.hotel__rating-star {
+  margin: 0;
+  width: 90px;
+  height: 17px;
+  background-image: url("../images/icons/star.svg");
+  background-repeat: space;
 }
 
 .catalog-choose {
@@ -531,6 +599,13 @@ body {
   list-style-type: none;
 }
 
+.inner-header-title-name {
+  color: #ffffff;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
 
 .paginaition-control {
   display: flex;

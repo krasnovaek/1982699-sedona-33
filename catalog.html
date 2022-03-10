@@ -45,6 +45,9 @@
     <main class="main-inner">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
+        <img class="home" src="images/icons/home.svg" width="12" height="11.7" alt="дом">
+        <img class="vector" src="images/icons/vector.svg" width="5" height="8" alt="вектор">
+        <h3 class="inner-header-title-name">Гостиницы</h3>
         <div class="filter-catalog">
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура</legend>
@@ -96,7 +99,9 @@
           </fieldset>
           <div clss="catalog-filter-button">
             <button class="button" type="submit">Применить</button>
-            <button class="button" type="reset">Сбросить</button>
+            <div class="catalog-filter-reset">
+              <button class="button" type="reset">Сбросить</button>
+            </div>
           </div>
           </fieldset>
         </div>
@@ -142,7 +147,7 @@
             <a class="more-hotel-list-button button" href="#">подробнее</a>
             <a class="hotel-list-button button" href="#">в избранное</a>
             <div class="rating-star">
-              <p class="hotel__rating-star">4 Звезды</p>
+              <div class="hotel__rating-star"></div>
               <p class="hotel__rating-text">Рейтинг: 8,5</p>
             </div>
           </li>
@@ -156,7 +161,7 @@
             <a class="more-hotel-list-button button" href="#">подробнее</a>
             <a class="hotel-list-button button" href="#">в избранное</a>
             <div class="rating-star">
-              <p class="hotel__rating-star">3 Звезды</p>
+              <p class="hotel__rating-star"></p>
               <p class="hotel__rating-text">Рейтинг: 8,9</p>
             </div>
           </li>
@@ -170,7 +175,7 @@
             <a class="more-hotel-list-button button" href="#">подробнее</a>
             <a class="hotel-list-button-green button" href="#">в избранное</a>
             <div class="rating-star">
-              <p class="hotel__rating-star">2 Звезды</p>
+              <p class="hotel__rating-star"></p>
               <p class="hotel__rating-text">Рейтинг: 9,2</p>
             </div>
           </li>
@@ -184,7 +189,7 @@
             <a class="more-hotel-list-button button" href="#">подробнее</a>
             <a class="hotel-list-button button" href="#">в избранное</a>
             <div class="rating-star">
-              <p class="hotel__rating-star">2 Звезды</p>
+              <p class="hotel__rating-star"></p>
               <p class="hotel__rating-text">Рейтинг: 9,2</p>
             </div>
             <button class="button pagination-show-more" type="button">Загрузить ещё</button>
@@ -222,38 +227,40 @@
       </div>
     </main>
     <footer class="page-footer">
-      <section class="page-footer-contacts">
+      <section class="page-footer-contacts-catalog">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-        <input type="email" id="appointment-form-email" name="appointment-form-email" placeholder="Ваш e-mail">
-        <button class="button" type="submit">Подписаться</button>
-      </section>
-      <div class="footer-contacts">
-        <section class="footer-social">
-          <h2 class="visually-hidden">давайте дружить</h2>
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="footer-social-link footer-social-tw" href="#">
-                <span class="visually-hidden">Твиттер</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="footer-social-link footer-social-fa" href="#">
-                <span class="visually-hidden">facebook</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="footer-social-link footer-social-yo" href="#">
-                <span class="visually-hidden">youtube</span>
-              </a>
-            </li>
-          </ul>
-          <a class="contacts-phone" href="tel:+74956660266">+7(495) 666-02-66</a>
-          <a class="footer-social-link footer-social-ht" href="#">
-            <span class="visually-hidden">htmlacademy</span>
-          </a>
-        </section>
-      </div>
+        <div class="appointment-email">
+          <label class="visually-hidden" for="appointment-form-email">Ваш e-mail</label>
+          <input type="email" id="appointment-form-email" name="appointment-form-email" placeholder="Ваш e-mail">
+          <button class="button appointment-form-buttom" type="submit">Подписаться</button>
+        </div>
+        <div class="footer-contacts">
+          <section class="footer-social">
+            <h2 class="visually-hidden">давайте дружить</h2>
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a class="footer-social-link footer-social-tw" href="#">
+                  <span class="visually-hidden">Твиттер</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link footer-social-fa" href="#">
+                  <span class="visually-hidden">facebook</span>
+                </a>
+              </li>
+              <li class="footer-social-item">
+                <a class="footer-social-link footer-social-yo" href="#">
+                  <span class="visually-hidden">youtube</span>
+                </a>
+              </li>
+            </ul>
+            <a class="contacts-phone" href="tel:+74956660266">+7(495) 666-02-66</a>
+            <a class="footer-social-link footer-social-ht" href="#">
+              <span class="visually-hidden">htmlacademy</span>
+            </a>
+          </section>
+        </div>
       </section>
     </footer>
   </body>
