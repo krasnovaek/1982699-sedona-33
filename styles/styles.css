@@ -72,6 +72,22 @@ body {
   height: 37px;
 }
 
+
+.button:hover {
+  background-color: #615048;
+}
+
+.button:focus {
+  background-color: #615048;
+  border: 3px solid #83b3d3;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.button:active {
+  background: #615048;
+}
+
 .more-hotel-list-button {
   background-color: #756257;
   border-radius: 4px;
@@ -91,9 +107,58 @@ body {
   border-radius: 4px;
 }
 
+
+.more-hotel-list-button button:hover {
+  background: #615048;
+}
+
+.more-hotel-list-button button:focus {
+  background: #615048;
+  border-radius: 4px;
+}
+
+.more-hotel-list-button button:active {
+  opacity: 0.3;
+  color: #ffffff;
+  background: #615048;
+  border-radius: 4px;
+}
+
 .hotel-list-button-green {
   margin-left: 54px;
   background-color: #7db54f;
+  border-radius: 4px;
+}
+
+.hotel-list-button-green:hover {
+  background: #6c9e42;
+}
+
+.hotel-list-button-green:focus {
+  background: #6c9e42;
+  border: 3px solid #756257;
+  border-radius: 4px;
+}
+
+.hotel-list-button-green:active {
+  color: #ffffff;
+  opacity: 0.3;
+}
+
+.favorites-hotel-list-button:hover {
+  background: #68a2ca;
+}
+
+.favorites-hotel-list-button:focus {
+  background: #68a2ca;
+  border: 3px solid #756257;
+  border-radius: 4px;
+}
+
+.favorites-hotel-list-button:active {
+  background: #68a2ca;
+  border: 1px solid #756257;
+  box-sizing: border-box;
   border-radius: 4px;
 }
 
@@ -385,9 +450,45 @@ body {
   margin: auto;
 }
 
+.appointment-form-email:hover {
+  background: #e6e6e6;
+  border-radius: 0 10px 10px 0;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.appointment-form-email:focus {
+  background: #e6e6e6;
+  border: 3px solid #83b3d3;
+  border-radius: 0 10px 10px 0;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.appointment-form-email:disabled {
+  background: #ffffff;
+  border: 2px solid #ff5757;
+  box-sizing: border-box;
+  border-radius: 0 10px 10px 0;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
 .appointment-form-buttom {
   height: 60px;
   width: 200px;
+  border-radius: 0 10px 10px 0;
+}
+
+.appointment-form-buttom:hover {
+  background: #68a2ca;
+}
+
+.appointment-form-buttom:focus {
+  background: #68a2ca;
+  border: 3px solid #756257;
+  border-radius: 0 10px 10px 0;
+}
+
+.appointment-form-buttom:active {
+  background: #68a2ca;
   border-radius: 0 10px 10px 0;
 }
 
@@ -441,6 +542,20 @@ body {
   margin-left: 30px;
 }
 
+.footer-social-link:hover {
+  background: #68a2ca;
+}
+
+.footer-social-link:focus {
+  border: 3px solid #83b3d3;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.footer-social-link:active {
+  opacity: 0.3;
+}
+
 .sort-lists {
   display: flex;
   list-style-type: none;
@@ -456,6 +571,22 @@ body {
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
+}
+
+.contacts-phone:hover {
+  color: #756257;
+}
+
+.contacts-phone:focus {
+  color: #756257;
+  border: 3px solid #83b3d3;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.contacts-phone:active {
+  color: #756257;
+  opacity: 0.3;
 }
 
 
@@ -489,6 +620,60 @@ body {
   margin-right: 95px;
 }
 
+.sort-link-social-tit:hover {
+  border: 2px solid #83b3d3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.sort-link-social-tit:focus {
+  border: 2px solid #83b3d3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.sort-link-social-tit:active {
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.sort-link-social-show:hover {
+  border: 2px solid #83b3d3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.sort-link-social-show:focus {
+  border: 2px solid #83b3d3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.sort-link-social-show:active {
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.sort-link-social-li:hover {
+  border: 2px solid #83b3d3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.sort-link-social-li:focus {
+  border: 2px solid #83b3d3;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.sort-link-social-li:active {
+  border: 2px solid #000000;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
 .footer-social-ht {
   width: 115px;
   height: 34px;
@@ -498,6 +683,21 @@ body {
   margin-right: 72px;
   margin-left: 53px;
   text-decoration: none;
+}
+
+
+.footer-social-ht:hover {
+  color: #756257;
+}
+
+.footer-social-ht:focus {
+  border: 3px solid #83b3d3;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+.footer-social-ht:active {
+  opacity: 0.3;
 }
 
 .footer-contacts-phone {
@@ -550,6 +750,21 @@ body {
   flex-direction: column;
   margin-right: 72px;
   border-radius: 4px;
+}
+
+.catalog-filter-button:hover {
+  background: #68a2ca;
+}
+
+.catalog-filter-button:focus {
+  background: #68a2ca;
+  border-radius: 0 10px 10px 0;
+}
+
+.catalog-filter-button:active {
+  background: #68a2ca;
+  border: 3px solid #756257;
+  border-radius: 0 10px 10px 0;
 }
 
 .catalog-filter-reset {
@@ -649,6 +864,21 @@ body {
   text-transform: uppercase;
 }
 
+.pagination-link:hover {
+  background: #68a2ca;
+}
+
+.pagination-link:focus {
+  background: #68a2ca;
+  border: 3px solid #756257;
+  border-radius: 4px;
+}
+
+.pagination-link:active {
+  color: #ffffff;
+  opacity: 0.3;
+}
+
 .pagination-current {
   color: #000000;
   background-color: #ffffff;
@@ -666,3 +896,17 @@ body {
   margin-left: 290px;
 }
 
+.pagination-show-more:hover {
+  background: #68a2ca;
+}
+
+.pagination-show-more:focus {
+  background: #68a2ca;
+  border: 3px solid #756257;
+  border-radius: 4px;
+}
+
+.pagination-show-more:active {
+  color: #ffffff;
+  opacity: 0.3;
+}
