@@ -109,7 +109,8 @@
       <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
       <div class="appointment-email">
         <label class="visually-hidden" for="appointment-form-email">Ваш e-mail</label>
-        <input type="email" id="appointment-form-email" name="appointment-form-email" placeholder="Ваш e-mail">
+        <input class="field" type="email" id="appointment-form-email" name="appointment-form-email"
+          placeholder="Ваш e-mail">
         <button class="button appointment-form-buttom" type="submit">Подписаться</button>
       </div>
     </section>
@@ -140,6 +141,55 @@
       </section>
     </div>
   </footer>
+  <div class="modal-container modal-container-close">
+    <div class="modal modal-auth">
+      <button class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <h1>Поиск гостиницы в седоне</h1>
+      <div class="form-input-blocks modal-show">
+        <div class="arrival-date form-input-block">
+          <label for="arrival-input" class="form-label">Дата заезда:</label>
+          <input type="text" id="arrival-input" name="arrival-date" placeholder="27 Апреля 2020"
+            class="form-input form-input-date">
+          <button type="button" class="form-date-input">
+            <span class="visually-hidden">Выбрать дату</span>
+          </button>
+        </div>
+        <div class="departure-date form-input-block">
+          <label for="departure-input" class="form-label">Дата Выезда:</label>
+          <input type="text" id="departure-input" name="departure-date" placeholder="1 сентября 2021"
+            class="form-input form-input-date">
+          <button type="button" class="form-date-input">
+            <span class="visually-hidden">Выбрать дату</span>
+          </button>
+        </div>
+        <div class="amount-people form-input-block">
+          <div class="amount-people-block">
+            <label for="adult" class="form-label amount-form-label">Взрослые:</label>
+            <button type="button" class="amount-people-button input-button-minus" id="amountAdultMinus"><span
+                class="visually-hidden">Уменьшить количество взрослых</span></button>
+            <input type="number" min="1" max="10" name="adult" value="2" id="adult" class="form-input form-input-num">
+            <button type="button" class="amount-people-button input-button-plus" id="amountAdultPlus"><span
+                class="visually-hidden">Увеличить количество взрослых</span></button>
+          </div>
+          <div class="amount-people-block">
+            <label for="children" class="form-label amount-form-label">Дети:</label>
+            <button type="button" class="amount-people-button input-button-minus" id="amountChildrenMinus"><span
+                class="visually-hidden">Уменьшить количество детей</span></button>
+            <input type="number" min="0" max="10" name="children" value="1" id="children"
+              class="form-input form-input-num">
+            <button type="button" class="amount-people-button input-button-plus" id="amountChildrenPlus"><span
+                class="visually-hidden">Увеличить количество детей</span></button>
+          </div>
+        </div>
+        <div class="submit-block">
+          <button type="submit" class="submit-form-button">Найти</button>
+        </div>
+      </div>
+    </div>
+    </form>
+
 </body>
 
 </html>
