@@ -108,10 +108,12 @@
       <h2>Подпишитесь на рассылку</h2>
       <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
       <div class="appointment-email">
-        <label class="visually-hidden" for="appointment-form-email">Ваш e-mail</label>
-        <input class="field" type="email" id="appointment-form-email" name="appointment-form-email"
-          placeholder="Ваш e-mail">
-        <button class="button appointment-form-buttom" type="submit">Подписаться</button>
+        <form class="appointment-email" action="#" method="get">
+          <label class="visually-hidden" for="appointment-form-email">Ваш e-mail</label>
+          <input class="field" type="email" id="appointment-form-email" name="appointment-form-email"
+            placeholder="Ваш e-mail">
+          <button class="button appointment-form-buttom" type="submit">Подписаться</button>
+        </form>
       </div>
     </section>
     <div class="footer-contacts">
@@ -141,7 +143,7 @@
       </section>
     </div>
   </footer>
-  <div class="modal-container modal-container-close">
+  <form class="modal-container modal-container-close">
     <div class="modal modal-auth">
       <button class="modal-close-button">
         <span class="visually-hidden">Закрыть</span>
@@ -188,7 +190,7 @@
         </div>
       </div>
     </div>
-    </form>
+  </form>
 
 </body>
 

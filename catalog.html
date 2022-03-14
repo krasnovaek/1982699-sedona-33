@@ -45,9 +45,10 @@
     <main class="main-inner">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
-        <div class="holel-image">
+        <div class="menumin-pic">
+          <img class="vector" src="images/icons/home.svg" width="12" height="12" alt="дом">
           <img class="vector" src="images/icons/vector.svg" width="5" height="8" alt="вектор">
-          <p class="inner-header-title-name">Гостиницы</p>
+          <h2 class="inner-header-title-name">Гостиницы</h2>
         </div>
         <div class="filter-catalog">
           <form class="catalog-filter" action="" method="get">
@@ -68,8 +69,6 @@
                 </li>
               </ul>
             </fieldset>
-          </form>
-          <form class="catalog-filter" action="" method="get">
             <fieldset class="catalog-filter-group">
               <legend class="catalog-filter-title">Тип жилья</legend>
               <ul class="catalog-filter-list">
@@ -88,9 +87,7 @@
                 </li>
               </ul>
             </fieldset>
-          </form>
-          <form class="catalog-filter" action="" method="get">
-            <div class="price-filter">
+            <fieldset class="price-filter">
               <legend class="form-filters__legend">Стоимость, ₽:</legend>
               <div class="range-wrapper-inputs">
                 <label class="form-filters__label">
@@ -102,7 +99,7 @@
               </div>
               <div class="range">
                 <div class="range-scale">
-                  <div class="range-bar" style="left: 42px; width: 287px">
+                  <div class="range-bar" style="left:0; width: 267px">
                     <button class="range-toggle toggle-min">
                       <span class="visually-hidden">Изменить минимальную цену.</span>
                     </button>
@@ -112,15 +109,12 @@
                   </div>
                 </div>
               </div>
-              </fieldset>
-          </form>
-          <div clss="catalog-filter-button">
-            <button class="button catalog-filter-button" type="submit">Применить</button>
-            <div class="catalog-filter-reset">
+            </fieldset>
+            <div clss="catalog-filter-button">
+              <button class="button catalog-filter-button" type="submit">Применить</button>
               <button class="button catalog-filter-reset" type="reset">Сбросить</button>
             </div>
-          </div>
-        </div>
+          </form>
       </header>
       <section class="catalog">
         <div class="catalog-choose">
@@ -246,7 +240,7 @@
       <section class="page-footer-contacts-catalog">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
-        <form action="" method="get">
+        <form class="appointment-email" action="" method="get">
           <div class="appointment-email">
             <label class="visually-hidden" for="appointment-form-email">Ваш e-mail</label>
             <input class="field" type="email" id="appointment-form-email" name="appointment-form-email"
